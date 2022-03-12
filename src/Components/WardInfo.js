@@ -3,6 +3,9 @@ import { Link, useNavigate } from "react-router-dom";
 import DataContext from "./Context/DataContext";
 import Database from "./Database/Database";
 import Review from "./Review";
+import Style from "./WardInfo.module.css";
+import WorkerIcon from "../Icons/worker.png";
+import PatientIcon from "../Icons/patient.png";
 function WardInfo() {
   const { ward } = useContext(DataContext);
   const [ward_obj] = Database.filter((wards) => {
@@ -18,20 +21,38 @@ function WardInfo() {
     Remarks = `Good Cleanliness Performance in this ward\nKeep It Up !!!`;
   }
   return (
-    <div>
-      <h1>Ward Number : {ward_obj.ward_no}</h1>
-      <h2>Ward Name : {ward_obj.ward_name}</h2>
-      <h2>Ward Patient : {ward_obj.ward_patient}</h2>
-      <h2>Ward Worker : {ward_obj.ward_worker}</h2>
-      <Review clean={ward_obj.clean_points} />
-      <h3>{Remarks}</h3>
-      <button
-        onClick={() =>
-          navigate("/complain", { state: { name: ward_obj.ward_name } })
-        }
-      >
-        Add complain
-      </button>
+    <div className={Style["ward_info"]}>
+      <div className={Style["ward_info__no"]}>
+        <h1>Ward Number : {ward_obj.ward_no}</h1>
+      </div>
+      <div className={Style["ward_info__name"]}>
+        <h2>Ward Name : {ward_obj.ward_name}</h2>
+      </div>
+      <div className={Style["ward_info__details"]}>
+        <div className={Style["ward_info__patient"]}>
+          <img src={PatientIcon} width="70px" height="70px" />
+          <h2>{ward_obj.ward_patient}</h2>
+          <p>Ward Patient</p>
+        </div>
+        <div className={Style["ward_info__worker"]}>
+          <img src={WorkerIcon} width="70px" height="70px"/>
+          <h2>{ward_obj.ward_worker}</h2>
+          <p>Ward Worker</p>
+        </div>
+      </div>
+      <div className={Style["ward_info__remark"]}>
+        <Review clean={ward_obj.clean_points} />
+        <h3>{Remarks}</h3>
+      </div>
+      <div className={Style["ward_info__review"]}>
+        <button
+          onClick={() =>
+            navigate("/complain", { state: { name: ward_obj.ward_name } })
+          }
+        >
+          Add complain
+        </button>
+      </div>
     </div>
   );
 }

@@ -1,18 +1,36 @@
-.ward_nav{
-    border: 2px solid black;
+.ward_nav {
     width: 15rem;
+    background-color: pink;
 }
-.ward_nav ul{
+
+.ward_nav ul {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     height: 100vh;
+    position: fixed;
+    left: 38px;
     align-items: center;
+    text-shadow: 0px 0px 10px red;
 }
-.ward_nav li{
+
+.ward_nav li {
     list-style: none;
     padding: 10px;
     border: 2px solid black;
     width: 10rem;
     cursor: pointer;
+    background-color: #f23333f7;
+    border-radius: 15px;
+    text-align: center;
+    transition: all 0.5s ease;
+    box-shadow: 0px 0px 10px black;
+}
+
+.ward_nav li:hover {
+    background-color: white;
+}
+
+.active {
+    background-color: white;
 }

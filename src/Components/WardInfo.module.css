@@ -1,0 +1,60 @@
+.ward_info {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.ward_info__no {
+    margin: 24px;
+}
+
+.ward_info__details {
+    margin-top: 75px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.ward_info__patient,
+.ward_info__worker {
+    border: 2px solid red;
+    padding: 7px 7px;
+    width: 180px;
+    height: 176px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.ward_info__patient h2,
+.ward_info__worker h2 {
+    font-size: 2rem;
+}
+
+.ward_info__patient p,
+.ward_info__worker p {
+    font-weight: 500;
+}
+.ward_info__remark{
+    
+    width: 50%;
+    margin: 5px auto;
+}
+
+.ward_info__review button{
+    padding: 11px 31px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    background: red;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+.ward_info__review button:hover{
+    background-color: black;
+}
+
+
+
+
+
