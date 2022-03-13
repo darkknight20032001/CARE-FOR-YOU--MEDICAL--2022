@@ -1,5 +1,5 @@
 import DataContext from "./DataContext";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 const DataContextProvider = (props) => {
   const [ward, setWard] = useState("COVID Ward");
   return (
