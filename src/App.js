@@ -1,9 +1,8 @@
-import logo from "./logo.svg";
 import "./App.css";
 import DataContextProvider from "./Components/Context/DataContextProvider";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./Components/Home/Home";
-import Complain from "./Complain/Complain";
+import Complain from "./Components/Complain/Complain";
 function App() {
   return (
     <DataContextProvider>
