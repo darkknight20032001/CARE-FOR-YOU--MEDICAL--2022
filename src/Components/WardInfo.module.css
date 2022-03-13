@@ -33,13 +33,13 @@
 .ward_info__worker p {
     font-weight: 500;
 }
-.ward_info__remark{
-    
+
+.ward_info__remark {
     width: 50%;
     margin: 5px auto;
 }
 
-.ward_info__review button{
+.ward_info__review button {
     padding: 11px 31px;
     font-size: 1rem;
     font-weight: bold;
@@ -50,11 +50,11 @@
     transition: all 0.3s ease;
     margin-top: 10px;
 }
-.ward_info__review button:hover{
+
+.ward_info__review button:hover {
     background-color: black;
 }
 
-
-
-
-
+.ward_info__review {
+    padding: 16px;
+}

@@ -49,7 +49,7 @@ const Complain = () => {
               onChange={(event) => setName(event.target.value)}
             />
 
-            <label htmlFor="subject">Subject</label>
+            <label htmlFor="subject">Complain</label>
             <textarea
               id="subject"
               name="subject"
