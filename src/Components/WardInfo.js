@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import DataContext from "./Context/DataContext";
 import Database from "./Database/Database";
 import Review from "./Review";
@@ -30,12 +30,12 @@ function WardInfo() {
       </div>
       <div className={Style["ward_info__details"]}>
         <div className={Style["ward_info__patient"]}>
-          <img src={PatientIcon} width="70px" height="70px" />
+          <img src={PatientIcon} width="70px" height="70px" alt="patient"/>
           <h2>{ward_obj.ward_patient}</h2>
           <p>Ward Patient</p>
         </div>
         <div className={Style["ward_info__worker"]}>
-          <img src={WorkerIcon} width="70px" height="70px"/>
+          <img src={WorkerIcon} width="70px" height="70px" alt="worker"/>
           <h2>{ward_obj.ward_worker}</h2>
           <p>Ward Worker</p>
         </div>

@@ -1,7 +1,7 @@
-import React, { useContext, useState } from "react";
+import React, { useContext} from "react";
 import DataContext from "../Context/DataContext";
 const NavLink = ({ id, name, active, setActive }) => {
-  const { ward, setWard } = useContext(DataContext);
+  const { setWard } = useContext(DataContext);
 
   return (
     <li
@@ -9,7 +9,6 @@ const NavLink = ({ id, name, active, setActive }) => {
       onClick={() => {
         setWard(name);
         setActive(id);
-        console.log(id, active);
       }}
     >
       {name}

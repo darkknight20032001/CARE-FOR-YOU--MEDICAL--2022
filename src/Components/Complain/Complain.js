@@ -24,7 +24,6 @@ const Complain = () => {
     if (name.trim().length >= 3 && message.trim().length >= 5) {
       setSubmit(true);
     }
-    console.log(Submit);
   };
   return !Submit ? (
     <>
