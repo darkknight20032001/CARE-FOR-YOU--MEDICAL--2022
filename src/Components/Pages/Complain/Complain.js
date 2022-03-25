@@ -72,7 +72,7 @@ const Complain = () => {
             </div>
             <div className={Style["complain_btn"]}>
               <button type="submit">Submit</button>
-              <button onClick={() => navigate("/")}>Go Back</button>
+              <button onClick={() => navigate("/home")}>Go Back</button>
             </div>
           </form>
         </div>

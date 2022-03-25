@@ -1,0 +1,9 @@
+.home {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+}
+
+.loading {
+    text-align: center;
+    margin: 18rem 20rem;
+}

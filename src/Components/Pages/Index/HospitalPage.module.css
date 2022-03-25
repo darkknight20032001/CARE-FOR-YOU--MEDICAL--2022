@@ -1,0 +1,44 @@
+.hospital {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10rem;
+}
+
+.hospital_select {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hospital_select p {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.hospital select {
+    width: 10rem;
+    text-align: center;
+    font-size: 1.2rem;
+    border-radius: 9px;
+}
+
+.hospital_info p:nth-child(3),
+.hospital_info p:nth-child(1) {
+    font-size: 4rem;
+    text-align: center;
+}
+
+.hospital_info p:nth-child(2) {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.hospital_info p:nth-child(2),
+.hospital_info p:nth-child(3) {
+    margin-top: 10px;
+}
+
+.loading {
+    text-align: center;
+    margin-top: 10rem;
+}
